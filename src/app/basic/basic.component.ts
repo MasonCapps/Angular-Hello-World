@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-basic',
-  templateUrl: './basic.component.html',
-  styleUrls: ['./basic.component.css']
+  template: '<h1 id="header">{{data}}</h1>',
+  styles: ['#header{ background-color: cornflowerblue;}']
 })
 export class BasicComponent implements OnInit {
 
@@ -11,5 +11,6 @@ export class BasicComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  data = "Test Data";
 
 }
